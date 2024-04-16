@@ -1,7 +1,7 @@
 import { createStyle } from '@gluestack-style/react';
 
 export const Button = createStyle({
-  'borderRadius': '$sm',
+  'borderRadius': '$xl',
   'backgroundColor': '$primary200',
   'flexDirection': 'row',
   'justifyContent': 'center',
