@@ -25,7 +25,7 @@ import { EditIcon, ArrowLeftIcon } from 'lucide-react-native';
 const ButtonBasic = ({ ...props }: any) => {
   return (
     <Button {...props}>
-      <ButtonText>Button2</ButtonText>
+      <ButtonText>Button</ButtonText>
     </Button>
   );
 };
