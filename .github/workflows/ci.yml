@@ -1,4 +1,4 @@
-nname: Argos + Storybook and Storycap
+name: Argos + Storybook and Storycap
 on:
   push:
     branches: [main, master]
