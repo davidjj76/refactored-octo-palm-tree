@@ -68,6 +68,7 @@
     "uuidv4": "^6.2.13"
   },
   "devDependencies": {
+    "@argos-ci/cli": "^2.0.1",
     "@babel/core": "^7.19.3",
     "@babel/generator": "^7.20.7",
     "@babel/parser": "^7.20.13",
@@ -97,6 +98,7 @@
     "jest-environment-jsdom": "^29.5.0",
     "react-native-builder-bob": "^0.20.3",
     "storybook-dark-mode": "^2.0.4",
+    "storycap": "^5.0.0",
     "typescript": "^5.1.6"
   },
   "peerDependencies": {

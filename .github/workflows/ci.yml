@@ -1,0 +1,26 @@
+name: Argos + Storybook and Storycap
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+
+      - name: Install dependencies
+        run: cd example/storybook && npm ci
+
+      - name: Build Storybook
+        run: cd example/storybook && npm exec -- storybook build --output-dir ./storybook-static
+
+      - name: Screenshot Storybook with Storycap
+        run: cd example/storybook && npm exec -- storycap --outDir ./screenshots --serverCmd "npx http-server ./storybook-static --port 6006" http://127.0.0.1:6006
+
+      - name: Upload screenshots to Argos
+        run: cd example/storybook && npm exec -- argos upload ./screenshots
+        env:
+          ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
