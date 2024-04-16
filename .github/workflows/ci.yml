@@ -12,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v3
 
       - name: Install dependencies
-        run: cd example/storybook && yarn install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: Build Storybook
         run: cd example/storybook && npm exec -- storybook build --output-dir ./storybook-static
