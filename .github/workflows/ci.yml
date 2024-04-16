@@ -21,6 +21,6 @@ jobs:
         run: cd example/storybook && npm exec -- storycap --outDir ./screenshots --serverCmd "npx http-server ./storybook-static --port 6007" http://127.0.0.1:6007
 
       - name: Upload screenshots to Argos
-        run: cd example/storybook && yarn add sharp --ignore-engines && npm exec -- argos upload ./screenshots
+        run: cd example/storybook && npm exec -- argos upload ./screenshots
         env:
           ARGOS_TOKEN: ${{ secrets.ARGOS_TOKEN }}
