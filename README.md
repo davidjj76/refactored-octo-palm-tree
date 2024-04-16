@@ -59,3 +59,5 @@ You can find detailed documentation of `gluestack-ui` for each component, includ
 JavaScript, React, React Native, Styled System
 
 Licensed under the MIT License, Copyright © 2023 GeekyAnts. See [LICENSE](./LICENSE) for more information.
+
+[![Covered by Argos Visual Testing](https://argos-ci.com/badge.svg)](https://app.argos-ci.com/davidjj76/didactic-octo-telegram/reference)
