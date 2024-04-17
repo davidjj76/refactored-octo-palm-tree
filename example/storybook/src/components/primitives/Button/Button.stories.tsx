@@ -1,4 +1,4 @@
-import type { ComponentMeta } from '@storybook/react-native';
+import type { ComponentMeta, Story } from '@storybook/react-native';
 import Button from './Button';
 import ButtonIsLoadingExample from './ButtonLoading';
 import ButtonSizesExample from './ButtonSizes';
@@ -51,6 +51,18 @@ const ButtonMeta: ComponentMeta<typeof Button> = {
       control: 'boolean',
       options: [true, false],
     },
+  },
+};
+
+export const ButtonBasic: Story<typeof Button> = {
+  args: {
+    action: 'positive',
+    variant: 'solid',
+    size: 'xl',
+    isHovered: false,
+    isPressed: false,
+    isFocusVisible: false,
+    isDisabled: false,
   },
 };
 
