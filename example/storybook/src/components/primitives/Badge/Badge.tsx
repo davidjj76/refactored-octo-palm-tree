@@ -35,7 +35,7 @@ import {
 
 const BadgeBasic = ({ text = 'NEW FEATURE', ...props }: any) => {
   return (
-    <Badge {...props} gap="$1">
+    <Badge {...props} gap="$4">
       <BadgeText>{text}</BadgeText>
       <BadgeIcon as={GlobeIcon} />
     </Badge>
