@@ -17,6 +17,9 @@
     },
     "chromatic": {
       "cache": false
+    },
+    "build-storybook": {
+      "cache": false
     }
   }
 }

@@ -16,7 +16,8 @@
     "lint": "eslint packages/**/**/src --ext .ts,.tsx --config .eslintrc",
     "eject:gluestack-style": "git clone -b development git@github.com:gluestack/gluestack-style.git gluestack-style && echo Now update babel.config.js",
     "storybook": "cd example/storybook && yarn storybook",
-    "chromatic": "turbo run chromatic"
+    "chromatic": "turbo run chromatic",
+    "build-storybook": "turbo run build-storybook"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
