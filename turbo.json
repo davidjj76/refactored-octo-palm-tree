@@ -14,12 +14,6 @@
     },
     "clean": {
       "cache": false
-    },
-    "chromatic": {
-      "cache": false
-    },
-    "build-storybook": {
-      "cache": false
     }
   }
 }
