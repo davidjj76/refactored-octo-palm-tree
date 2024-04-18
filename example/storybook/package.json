@@ -94,7 +94,6 @@
     "babel-loader": "^8.2.3",
     "babel-plugin-react-docgen-typescript": "^1.5.1",
     "babel-plugin-react-native-web": "^0.18.10",
-    "chromatic": "^11.3.0",
     "find-yarn-workspace-root": "^2.0.0",
     "jest-environment-jsdom": "^29.5.0",
     "react-native-builder-bob": "^0.20.3",
